@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaDiscord } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -18,26 +19,33 @@ export default function Home() {
           alt="we craft code"
           height={125}
           width={220}
+          quality={75}
+          priority={true}
         />
       </div>
       <Link
         href="https://discord.gg/Z87c4twuaX"
         prefetch={false}
         role="button"
-        className="font-semibold bg-gray-900 hover:bg-gray-800 text-gray-200 hover:text-gray-100 px-4 py-2 rounded-md cursor-pointer"
+        className="flex gap-3 font-semibold bg-gray-50 hover:bg-gray-300 text-gray-900 hover:text-gray-700 px-4 py-2 rounded-md cursor-pointer transition-colors duration-300 ease-in-out"
       >
-        Join our Discord Channel
+        <div>Join our Discord Channel</div>
+        <FaDiscord className="inline-block w-6 h-6" />
       </Link>
-      <div className="sm:text-xl text-gray-800 sm:w-[600px] text-center p-8">
+      <div className="sm:text-xl text-gray-50 sm:w-[600px] text-center p-8">
         We are a small group of people who leverage learning and programming
         through motivation, mentoring and craftsmanship.
       </div>
       <a
         href="mailto:wecraftcode@gmail.com"
-        className="hover:underline font-semibold text-red-600 hover:text-red-500"
+        className="hover:underline font-semibold text-red-500 hover:text-red-700 transition-colors duration-300 ease-in-out"
       >
         wecraftcode@gmail.com
       </a>
+      <div className="flex flex-col items-center text-xs">
+        <div>2024 © we craft code</div>
+        <div>all rights reserved</div>
+      </div>
     </div>
   );
 }
