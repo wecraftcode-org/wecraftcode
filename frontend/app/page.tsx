@@ -43,7 +43,7 @@ export default function Home() {
         wecraftcode@gmail.com
       </a>
       <div className="flex flex-col items-center text-xs">
-        <div>2024 © we craft code</div>
+        <div>2024-2025 © we craft code</div>
         <div>all rights reserved</div>
       </div>
     </div>
