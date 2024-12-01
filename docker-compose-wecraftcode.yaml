@@ -1,7 +1,7 @@
 services:
   frontend-wecraftcode:
     container_name: wecraftcode-frontend
-    image: ghcr.io/evedes/we-craft-code/frontend:latest
+    image: ghcr.io/wecraftcode-org/wecraftcode/frontend:latest
     restart: unless-stopped
 networks:
   vedesvps:
