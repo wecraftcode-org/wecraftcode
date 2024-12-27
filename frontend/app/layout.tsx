@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "We Craft Code",
   description:
     "We are a small group of people who leverage learning and programming through motivation, mentoring and craftsmanship.",
+  metadataBase: new URL("https://wecraftcode.org"),
   manifest: "/manifest.json",
   icons: {
     icon: [
